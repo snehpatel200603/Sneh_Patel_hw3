@@ -1,49 +1,194 @@
-*{
+/* these all apply to the body element -> global rules */
+
+* {
     border: none;
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
 }
 
-.hidden{
-    display: none;
+.hidden { display: none; }
+
+html, body { height: 100% }
+
+body { 
+  font-family: sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
-html,body{
-    height: 100%;
+/* main header rules */
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    height: 100px;
 }
 
-body{
-    font-family: sans-serif;
-    background-color: black;
+#main-logo { width: 100px; padding: 10px 0; }
+
+/* main rules here */
+#character_nav {
+    text-align: center;
+    background-color: #c98612;
+
+    background-image: url('../images/');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-blend-mode: multiply;
+}
+
+.characters { list-style-type: none; }
+
+.characters li { 
+    position: relative;
+    display: inline-block;
+    height: 225px;
+    margin: 15px 8px;
+
+    background-color: rgb(217, 110, 2);
+
+    text-align: left;
+    cursor: pointer;
+}
+
+.characters li h5 {
+    position: relative;
     color: white;
+    padding: 12px 8px;
+
+    z-index: 500;
 }
 
-/*  main header rules*/
+.characters li a { text-decoration: none; }
 
-header{
-background-color: red;
-text-align: center;
-position: sticky;
-top: 0%;
+.red_bumper {
+    width: 100%;
+    height: 6px;
+    background-color: rgb(94, 0, 0);
 
+    transition: height 0.2s ease-in-out;
+
+    position: absolute;
 }
 
-#marvel-logo{
-    width: 300px;
-    max-width: 300px;
-    padding: 10px 0px;
+.characters li:hover .red_bumper { height: 75px; }
+
+article { padding: 30px; }
+
+/* select the h3 tag inside the article tag on the page */
+/* a selector followed by a space and then ANOTHER selector gets a reference to the parent element and then the child element or elements inside of it */
+article h3  {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 25px;
+    color: red;
+}
+article h3:hover{font-size: 32.4px;
+color: white;}
+
+
+/* select the p tag inside the article tag on the page */
+article p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
 }
 
-/* footer rules*/
-footer{
+.sprite{
+    width: 150px;
+    height: 150px;
+    
+    background-image: url('../images/thelions.jpg');
+}
+
+
+
+#carol { background-position: -150px 0; }
+#clint { background-position: -300px 0; }
+#hulk { background-position: -450px 0; }
+#thor { background-position: -600px 0; }
+#widow { background-position: -750px 0; }
+
+.sprite:hover { background-position-y: -150px !important; }
+
+/* footer rules here */
+footer {
     color: white;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0;
     text-align: center;
 }
 
-.stickey-footer{
+.sticky_footer {
     position: sticky;
     top: 100%;
-    background-color: rgb(40,37,37);
+
+    height: 80px;
+    background-color: rgb(40, 37, 37);
 }
+
+/* lightbox rules here */
+
+.lightbox { 
+    width: 100vw; /* vw = viewport width => screen width */
+    height: 100vh; /* vh = viewport height => screen height */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(102, 102, 102, 0.85);
+    background-image: url('../images/backtristan.png');
+    background-repeat: no-repeat;
+
+    background-size: 100vh; /* 55% of the viewport height */
+    background-position: 40px bottom;
+
+    z-index: 5000;
+
+    display: none;
+}
+
+
+
+#lightbox2{ background-image:url('../images/backandriew.png');}
+#lightbox3{background-image: url('../images/jakob.png');}
+#lightbox4{ background-image: url('../images/David-goggins-quotes-1\ Small.jpg'); }
+#lightbox5{ background-image: url('../images/mia.png'); }
+#lightbox6{ background-image: url('../images/tej.png'); }
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+
+    color: white;
+    font-size: 3em;
+
+    text-decoration: none;
+
+    font-weight: bolder;
+}
+
+.lightbox_close:hover { opacity: 0.5; color: rgb(0, 170, 255); }
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_text, .lb_heading { text-align: left; }
+
+.lb_text {
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+/* turn the lightbox on using the :target pseudo selector */
+.lightbox:target { display: block; }
