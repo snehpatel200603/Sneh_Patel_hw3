@@ -19,18 +19,18 @@ body {
 
 /* main header rules */
 header {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     position: sticky;
     top: 0;
     text-align: center;
 }
 
-#main-logo { width: 300px; padding: 10px 0; }
+#main-logo { width: 150px; padding: 10px 0; }
 
 /* main rules here */
 #character_nav {
     text-align: center;
-    background-color: #675050;
+    background-color: #000000;
 
     background-image: url('../images/back_img.jpg');
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@ header {
     height: 225px;
     margin: 15px 8px;
 
-    background-color: rgb(42, 42, 42);
+    background-color: rgba(194, 188, 16, 0.527);
 
     text-align: left;
     cursor: pointer;
@@ -55,7 +55,7 @@ header {
 
 .characters li h5 {
     position: relative;
-    color: white;
+    color: rgb(254, 3, 3);
     padding: 12px 8px;
 
     z-index: 500;
@@ -66,7 +66,7 @@ header {
 .red_bumper {
     width: 100%;
     height: 6px;
-    background-color: rgb(94, 0, 0);
+    background-color: rgb(222, 130, 0);
 
     transition: height 0.2s ease-in-out;
 
@@ -83,7 +83,7 @@ article h3  {
     font-size: 2em;
     text-align: center;
     margin-bottom: 25px;
-    color: red;
+    color: rgb(240, 126, 12);
 }
 article h3:hover{font-size: 32.4px;
 color: white;}
@@ -115,7 +115,7 @@ article p {
 
 /* footer rules here */
 footer {
-    color: white;
+    color: rgb(255, 9, 9);
     padding: 20px 0;
     text-align: center;
 }
@@ -125,7 +125,7 @@ footer {
     top: 100%;
 
     height: 80px;
-    background-color: rgb(40, 37, 37);
+    background-color: rgb(233, 128, 8);
 }
 
 /* lightbox rules here */
@@ -139,10 +139,10 @@ footer {
     left: 0;
 
     background-color: rgba(0, 0, 0, 0.85);
-    background-image: url('../images/domic.png');
+    background-image: url('../images/backtristan.png');
     background-repeat: no-repeat;
 
-    background-size: 55vh; /* 55% of the viewport height */
+    background-size: 100vh; /* 55% of the viewport height */
     background-position: 40px bottom;
 
     z-index: 5000;
@@ -152,18 +152,18 @@ footer {
 
 
 
-#lightbox2{ background-image: url('../images/letty.png'); }
-#lightbox3{background-image: url('../images/jakob.png');}
-#lightbox4{ background-image: url('../images/ramsey.png'); }
-#lightbox5{ background-image: url('../images/mia.png'); }
-#lightbox6{ background-image: url('../images/tej.png'); }
+#lightbox2{ background-image: url('../images/backandriew.png'); }
+#lightbox3{background-image: url('../images/elonback.png');}
+#lightbox4{ background-image: url('../images/David-goggins-quotes-1\ Small.jpg'); }
+#lightbox5{ background-image: url('../images/'); }
+#lightbox6{ background-image: url('../images/'); }
 
 .lightbox_close {
     position: relative;
     top: 20px;
     left: 95%;
 
-    color: white;
+    color: rgb(250, 6, 6);
     font-size: 3em;
 
     text-decoration: none;
@@ -171,7 +171,7 @@ footer {
     font-weight: bolder;
 }
 
-.lightbox_close:hover { opacity: 0.5; color: rgb(0, 170, 255); }
+.lightbox_close:hover { opacity: 0.5; color: rgb(231, 156, 5); }
 
 .lightbox article {
     width: 55%;
