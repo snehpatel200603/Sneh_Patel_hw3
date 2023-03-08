@@ -23,17 +23,16 @@ header {
     position: sticky;
     top: 0;
     text-align: center;
-    height: 100px;
 }
 
-#main-logo { width: 100px; padding: 10px 0; }
+#main-logo { width: 300px; padding: 10px 0; }
 
 /* main rules here */
 #character_nav {
     text-align: center;
-    background-color: #c98612;
+    background-color: #675050;
 
-    background-image: url('../images/');
+    background-image: url('../images/back_img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -48,7 +47,7 @@ header {
     height: 225px;
     margin: 15px 8px;
 
-    background-color: rgb(217, 110, 2);
+    background-color: rgb(42, 42, 42);
 
     text-align: left;
     cursor: pointer;
@@ -99,14 +98,12 @@ article p {
     margin: 0 auto;
 }
 
-.sprite{
+.sprite {
     width: 150px;
     height: 150px;
     
     background-image: url('../images/thelions.jpg');
 }
-
-
 
 #carol { background-position: -150px 0; }
 #clint { background-position: -300px 0; }
@@ -141,11 +138,11 @@ footer {
     top: 0;
     left: 0;
 
-    background-color: rgba(102, 102, 102, 0.85);
-    background-image: url('../images/backtristan.png');
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url('../images/domic.png');
     background-repeat: no-repeat;
 
-    background-size: 100vh; /* 55% of the viewport height */
+    background-size: 55vh; /* 55% of the viewport height */
     background-position: 40px bottom;
 
     z-index: 5000;
@@ -155,9 +152,9 @@ footer {
 
 
 
-#lightbox2{ background-image:url('../images/backandriew.png');}
+#lightbox2{ background-image: url('../images/letty.png'); }
 #lightbox3{background-image: url('../images/jakob.png');}
-#lightbox4{ background-image: url('../images/David-goggins-quotes-1\ Small.jpg'); }
+#lightbox4{ background-image: url('../images/ramsey.png'); }
 #lightbox5{ background-image: url('../images/mia.png'); }
 #lightbox6{ background-image: url('../images/tej.png'); }
 
